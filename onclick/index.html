@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+            background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,162,1) 75%);
+        }
+        .gallery {
+            display: flex;
+            justify-content: space-around;
+            border: 2PX double rgb(245, 234, 234);
+            border-radius: 5px;
+          padding-bottom: 20px;
+            padding-top: 20px;
+        }
+        .gallery img {
+            width: 200px;
+            height: 200px;
+            border-radius: 30px;
+            filter: grayscale(100%);
+        }
+        .gallery img:hover{
+            filter: grayscale(0);
+        }
+        .heading{
+           text-align: center;
+           color: white;
+           font-weight: 600;
+           text-transform: uppercase;
+        }
+        #registerForm{
+            display: flex;
+            color: black;
+            
+        }
+    </style>
+</head>
+<body>
+    <H1 class="heading">gallery</H1>
+    <div class="gallery">
+       <img id="img1" src="register.png">
+        <img id="img2" src="information-1015298_640.webp">
+        <img id="img3" src="dice.jpeg">
+        <img id="img4" src="code.jpeg">
+    </div>
+
+    <form id="registerForm" style="display: none;">
+        <input type="text" id="name" placeholder="Name">
+        <input type="email" id="email" placeholder="Email">
+        <input type="text" id="username" placeholder="Username">
+        <button type="submit">Register</button>
+    </form>
+
+    <div id="userInfo" style="display: none;"></div>
+
+    <div id="diceResult" style="display: none;"></div>
+
+    <div id="couponCode" style="display: none;"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
